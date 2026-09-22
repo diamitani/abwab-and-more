@@ -7,52 +7,56 @@ const PDF_HREF = "/abwab-salesgency-proposal.pdf";
 
 const WEBSITE = [
   [
-    "Continue this mockup",
-    "The live site is the starting point. We finish collections, product pages, atelier, about, and quote — then take it to production.",
+    "Ship the site from this mockup",
+    "Collections, product pages, atelier, about, and the quote flow go from sample to production. What you are clicking today is the foundation, not a throwaway.",
   ],
   [
     "Three design revisions",
-    "Kickoff, content, and pre-launch. Each is a structured review. The catalog language stays the source of truth.",
+    "Kickoff, content lock, and pre-launch. Each review is scheduled. Your catalog remains the visual source of truth.",
   ],
   [
-    "Additional content",
-    "Photography, finishes, kitchen and dressing-room stories, and copy you supply — connected so this is a working catalog, not a sample.",
+    "Connect the rest of the catalog",
+    "Photography, finishes, kitchens, dressing rooms, and copy you provide are placed into the live site so it reads as a working showroom, not a teaser.",
   ],
   [
-    "Your domain and backend",
-    "Launch on your domain. Transfer hosting, environment, and the repository. The site and the records stay yours.",
+    "Launch on your domain",
+    "Hosting, repository, and environment transfer to you. After launch, ABWAB owns the property. We do not keep the keys.",
   ],
   [
-    "Two to three meetings",
-    "Diagnose, build review, launch. Short sessions with the mockup on the table so nothing is abstract.",
+    "Two to three working sessions",
+    "Kickoff, build review, and launch. Short meetings with the live site on screen so decisions are concrete.",
   ],
 ];
 
 const ENGINE = [
   [
-    "Inbound conversion",
-    "Qualify, enrich and route every quote and inbound lead to the right owner, with the right next action.",
+    "Quote chatbot",
+    "An on-site concierge trained on your doors, kitchens, and dressing rooms. It gathers project detail and prepares a preliminary estimate before a person ever picks up the phone.",
   ],
   [
-    "Installed in your CRM",
-    "Leads, quote briefs and conversation context written into your system. We do not replace your stack.",
+    "Lead engine",
+    "Every chat, form, and inbound inquiry is qualified, scored, and routed to the right owner with a next action attached.",
   ],
   [
-    "Daily reports",
-    "A morning digest: new inquiries, estimates issued, unanswered threads, and what needs a person next.",
+    "CRM write-back",
+    "Names, rooms, finishes, and conversation context land in the system you already use. We wire into your CRM. We do not replace it.",
   ],
   [
-    "Auto-responder",
-    "Every inbound gets a timely first reply so no architect or homeowner waits on a missed call.",
+    "Daily reports and first reply",
+    "A morning digest of new inquiries, estimates issued, and threads still waiting. An auto-responder so no architect or homeowner sits in silence.",
   ],
 ];
 
 const PRESENTERS = [
-  ["Patrick Diamitani", "SalesGency", "GTM AI and automation. Delivery owner for the site, CRM wiring, and launch."],
+  [
+    "Patrick Diamitani",
+    "SalesGency",
+    "Delivery lead for the production website, quote chatbot, CRM wiring, and handoff to ABWAB.",
+  ],
   [
     "Geraldy Jean-Baptiste",
     "Unleash Your Sales Greatness",
-    "Sales process and inbound motion. Partner on how quotes get worked once they land.",
+    "Sales partner. Owns the motion after a quote lands — follow-up that turns a brief into a booked measure.",
   ],
 ];
 
@@ -89,23 +93,27 @@ function ProposalPage() {
       <section className="sg-hero text-white">
         <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-24">
           <p className="text-xs font-medium tracking-widest text-white/55 uppercase">
-            Proposal · September 2026 · Prepared for ABWAB & More
+            Confidential proposal · September 2026 · ABWAB & More
           </p>
           <h1 className="mt-6 max-w-3xl font-sans text-5xl leading-[1.02] font-extrabold tracking-tight sm:text-6xl">
-            Installed in your stack.
-            <span className="mt-2 block text-sg-cyan">Built to be trusted.</span>
+            Website. Chatbot. Lead engine.
+            <span className="mt-2 block text-sg-cyan">
+              One sprint. You own all three.
+            </span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/75">
-            A custom build for ABWAB & More: finish the website you are walking,
-            move it onto your domain, and install an inbound conversion workflow
-            so every quote gets worked. Standard delivery is a 30-day sprint.
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/75">
+            SalesGency, in partnership with Unleash Your Sales Greatness, will
+            take this live mockup to production, place a quote chatbot on it,
+            and install a lead engine that writes every inquiry into your CRM.
+            Thirty days. Ten thousand dollars. The site, the bot, and the
+            pipeline transfer to ABWAB.
           </p>
           <p className="mt-8 font-sans text-4xl font-extrabold tracking-tight tabular-nums">
             $10,000
           </p>
           <p className="mt-2 text-sm text-white/55">
-            30-day sprint. Website plus inbound conversion. Client-owned.
-            Optional 14-day sprint +$2,500.
+            Website $7,000 · Quote chatbot and lead engine $3,000 · 30-day
+            sprint included. Faster 14-day delivery available for $2,500 more.
           </p>
         </div>
       </section>
@@ -113,34 +121,39 @@ function ProposalPage() {
       <main className="mx-auto max-w-5xl space-y-20 px-5 py-16 sm:px-8 sm:py-20">
         <section>
           <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
-            Essence
+            What you are buying
           </p>
           <h2 className="mt-3 max-w-2xl font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
-            Lead with the result. Prove it with the system.
+            A commercial website with a quoting desk that never closes.
           </h2>
           <p className="mt-4 max-w-2xl leading-relaxed">
-            SalesGency installs AI revenue workflows inside your existing stack,
-            so every lead gets worked, every conversation becomes usable data,
-            and every next step moves forward. In partnership with Unleash Your
-            Sales Greatness.
+            ABWAB already has the catalog. What is missing is a public house
+            for it, a chatbot that can take a first brief, and a lead engine
+            that makes sure no inquiry dies in an inbox. This engagement
+            delivers those three pieces as one system, then hands you the
+            keys.
           </p>
           <div className="mt-10 grid gap-8 border-t border-sg-line pt-8 sm:grid-cols-3">
             {[
               [
-                "1. Outcome",
-                "More inbound quotes get worked. Less revenue work is lost to missed calls, handoffs and incomplete briefs.",
+                "Website",
+                "$7,000",
+                "Production site from this mockup: collections, product pages, atelier, about, quote. Three revisions. Your domain. Your backend.",
               ],
               [
-                "2. Mechanism",
-                "We finish the site and install an inbound conversion workflow across web, CRM, daily reports and first reply.",
+                "Quote chatbot",
+                "Included in $3,000",
+                "Catalog-trained concierge on the site. It specifies the project, issues a preliminary estimate, and files the brief.",
               ],
               [
-                "3. Proof",
-                "You are already on the mockup. This is not a generic demo — it is the catalog, live, waiting to be transferred.",
+                "Lead engine",
+                "Included in $3,000",
+                "Routing, CRM write-back, daily reports, and an auto-responder so every inbound is answered and owned.",
               ],
-            ].map(([title, copy]) => (
+            ].map(([title, price, copy]) => (
               <div key={title}>
                 <h3 className="font-sans text-lg font-bold text-sg-ink">{title}</h3>
+                <p className="mt-1 text-sm font-medium text-sg-action">{price}</p>
                 <p className="mt-2 text-sm leading-relaxed">{copy}</p>
               </div>
             ))}
@@ -156,8 +169,9 @@ function ProposalPage() {
               ABWAB & More
             </p>
             <p className="mt-2 text-sm leading-relaxed">
-              Doors, kitchens, dressing rooms. This live mockup is the sample of
-              work you would be paying to finish, host on your domain, and own.
+              Luxury millwork — doors, kitchens, dressing rooms. This live
+              mockup is the sample of work you would pay to finish, host, and
+              keep. It is not a concept deck. It is the house, already standing.
             </p>
           </div>
           <div>
@@ -166,7 +180,8 @@ function ProposalPage() {
             </p>
             <SalesGencyMark className="mt-2 text-2xl" />
             <p className="mt-2 text-sm leading-relaxed">
-              AI revenue workflows for modern GTM teams. A d/b/a of Diamitani
+              Custom websites and AI revenue systems for operators who already
+              have demand and cannot afford to drop it. A d/b/a of Diamitani
               Industries, in partnership with Unleash Your Sales Greatness.
             </p>
             <p className="mt-3 text-sm">
@@ -194,13 +209,13 @@ function ProposalPage() {
             Presenters
           </p>
           <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
-            Who is in the room.
+            Who signs the work.
           </h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {PRESENTERS.map(([name, org, copy]) => (
               <div
                 key={name}
-                className="rounded-lg border border-sg-line bg-white p-6"
+                className="break-inside-avoid rounded-lg border border-sg-line bg-white p-6"
               >
                 <p className="font-sans text-xl font-extrabold tracking-tight text-sg-ink">
                   {name}
@@ -214,15 +229,15 @@ function ProposalPage() {
 
         <section>
           <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
-            Custom scope · website
+            Part one · website · $7,000
           </p>
           <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
-            Finish the catalog. Transfer it to you.
+            A production catalog on your name.
           </h2>
           <p className="mt-4 max-w-2xl leading-relaxed">
-            $7,000 to continue this build through launch — three design
-            revisions, additional content, two to three meetings, and transfer
-            to your domain and backend.
+            Seven thousand dollars covers the site through launch: finish this
+            mockup, three design revisions, remaining content, two to three
+            meetings, and transfer onto ABWAB’s domain and infrastructure.
           </p>
           <ol className="mt-8 space-y-6">
             {WEBSITE.map(([title, copy], i) => (
@@ -241,21 +256,22 @@ function ProposalPage() {
 
         <section>
           <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
-            Engine 01 · inbound conversion
+            Part two · quote chatbot and lead engine · $3,000
           </p>
           <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
-            Work every inbound. Write it back to your CRM.
+            Capture the quote. File it. Follow it.
           </h2>
           <p className="mt-4 max-w-2xl leading-relaxed">
-            $3,000 to install a quote-and-lead workflow in your stack: the
-            on-site concierge, CRM wiring, daily reports, and an auto-responder.
-            Your tools are not the problem. The gaps between them are.
+            Three thousand dollars installs the commercial layer on top of the
+            site: a quote chatbot visitors can talk to, and a lead engine that
+            qualifies, logs, reports, and replies. The millwork is the product.
+            This is the desk that takes the order.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {ENGINE.map(([title, copy]) => (
               <div
                 key={title}
-                className="rounded-lg border border-sg-line bg-white p-6"
+                className="break-inside-avoid rounded-lg border border-sg-line bg-white p-6"
               >
                 <h3 className="font-sans font-bold text-sg-ink">{title}</h3>
                 <p className="mt-2 text-sm leading-relaxed">{copy}</p>
@@ -269,14 +285,14 @@ function ProposalPage() {
             Model access
           </p>
           <h2 className="mt-3 max-w-2xl font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
-            The concierge runs on your models. We help you set that up.
+            The chatbot runs on ABWAB’s models. We stand it up with you.
           </h2>
           <p className="mt-4 max-w-2xl leading-relaxed">
-            ABWAB needs its own model access for the quote concierge — your
-            keys, your vendor, your billing. SalesGency does not host or resell
-            the model. We help you choose access, put credentials in your
-            environment, and wire the concierge into the site and CRM so it is
-            installed in your stack.
+            You bring the model account — your vendor, your keys, your usage
+            bill. SalesGency does not resell or host the model. We help you
+            obtain access, place credentials in your environment, and connect
+            the chatbot and lead engine so the whole system lives in your
+            stack. Model spend is billed by your provider, not by us.
           </p>
         </section>
 
@@ -285,23 +301,23 @@ function ProposalPage() {
             Investment
           </p>
           <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
-            One engagement. 30-day sprint. $10,000.
+            $10,000. Payable by ABWAB & More.
           </h2>
           <div className="mt-8 divide-y divide-sg-line border-y border-sg-line">
             {[
               [
-                "Website",
-                "Continue the mockup, 3 design revisions, additional content, 2–3 meetings, domain and backend transfer",
+                "Website build",
+                "Production site from this mockup, three design revisions, remaining content, two to three meetings, domain and backend transfer",
                 "$7,000",
               ],
               [
-                "Inbound conversion workflow",
-                "Quotes, inbound leads, CRM wiring, daily reports, auto-responder — installed in your stack, on your models",
+                "Quote chatbot and lead engine",
+                "On-site quote chatbot, inbound routing, CRM write-back, daily reports, auto-responder — on your models",
                 "$3,000",
               ],
               [
                 "30-day sprint",
-                "Standard delivery window. Included.",
+                "Standard delivery from signed agreement to launch. Included in the figure above.",
                 "Included",
               ],
             ].map(([item, note, price]) => (
@@ -338,8 +354,8 @@ function ProposalPage() {
                   14-day sprint
                 </p>
                 <p className="mt-1 text-sm leading-relaxed">
-                  Compress the same scope into two weeks. Additional fee on top
-                  of the $10,000 engagement.
+                  Same website, chatbot, and lead engine, delivered in two
+                  weeks instead of thirty days.
                 </p>
               </div>
               <p className="shrink-0 font-sans text-xl font-extrabold tabular-nums text-sg-ink">
@@ -347,46 +363,46 @@ function ProposalPage() {
               </p>
             </div>
             <p className="mt-3 text-sm text-sg-caption">
-              With the 14-day option the total is $12,500.
+              Fourteen-day option brings the total to $12,500.
             </p>
           </div>
 
           <p className="mt-6 text-sm leading-relaxed">
-            Payment is 50% at signed SOW and 50% on delivery. Three design
-            revisions are included. Client data, credentials, and model access
-            stay the client’s. No monthly platform fee in this figure — hosting
-            sits on your account after transfer. Model usage is billed by your
-            provider, not by SalesGency.
+            Fifty percent is due on signed agreement. Fifty percent is due on
+            delivery. Three design revisions are included. Hosting after
+            transfer sits on your account. There is no monthly platform fee in
+            this number. Client data, credentials, and model access remain
+            yours.
           </p>
         </section>
 
         <section>
           <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
-            How it works
+            How the sprint runs
           </p>
           <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
-            Built around your process, not a generic demo.
+            Thirty days. Three gates. Then it is yours.
           </h2>
           <p className="mt-4 max-w-2xl leading-relaxed">
-            Standard path is 30 days from signed SOW to launch. The 14-day
-            option is the same three steps, compressed.
+            Signed agreement to live site in 30 days. The 14-day option is the
+            same sequence, compressed.
           </p>
           <div className="mt-10 grid gap-8 border-t border-sg-line pt-8 sm:grid-cols-3">
             {[
               [
-                "Step 1",
-                "Diagnose",
-                "Kickoff: domain, CRM, model access, content, first design revision. Map handoffs and the work that is slow or invisible.",
+                "Week 1",
+                "Kickoff",
+                "Domain, CRM, model access, content, first design revision. We map where quotes currently stall.",
               ],
               [
-                "Step 2",
+                "Weeks 2–3",
                 "Build",
-                "Connect content, second revision, inbound workflow in your CRM on your models. Guardrails and real quote scenarios.",
+                "Remaining catalog, second revision, quote chatbot live against real scenarios, lead engine writing into your CRM.",
               ],
               [
-                "Step 3",
+                "Week 4",
                 "Launch",
-                "Third revision, transfer to your domain, auto-responder live, ownership documented.",
+                "Third revision, site on your domain, auto-responder on, ownership documented, keys transferred.",
               ],
             ].map(([step, title, copy]) => (
               <div key={step}>
@@ -406,15 +422,16 @@ function ProposalPage() {
       <section className="sg-hero text-white">
         <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
           <p className="text-xs font-medium tracking-widest text-white/55 uppercase">
-            Next step
+            Decision
           </p>
           <h2 className="mt-3 max-w-2xl font-sans text-4xl font-extrabold tracking-tight sm:text-5xl">
-            Stop losing inbound quotes to a missed call.
+            Approve $10,000 and we start the sprint.
           </h2>
           <p className="mt-4 max-w-xl text-white/75 leading-relaxed">
-            If this mockup is the house you want, ABWAB & More pays $10,000 for
-            a 30-day sprint to finish it, transfer it, and install the inbound
-            workflow. Walk the catalog. Then tell us to proceed.
+            Walk the mockup. If this is the catalog ABWAB wants public, sign
+            the agreement. Fifty percent to begin. In thirty days the website,
+            the quote chatbot, and the lead engine are live on your domain and
+            in your name.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 print:hidden">
             <Link

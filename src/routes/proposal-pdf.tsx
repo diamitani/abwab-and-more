@@ -31,7 +31,7 @@ function ProposalPdfPage() {
 
       <main className="mx-auto max-w-[52rem] space-y-6 px-4 py-8">
         <p className="text-center text-sm text-white/60">
-          6-page letter proposal · $10,000 · 30-day sprint
+          6-page letter · Website, chatbot, and lead engine · $10,000
         </p>
         {PAGES.map((n) => (
           <figure key={n} className="overflow-hidden rounded-sm bg-white shadow-2xl">
