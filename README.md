@@ -6,7 +6,10 @@ Luxury millwork website — doors, kitchens, and dressing rooms. A proposal mock
 
 ## Live site
 
-Deployed on Vercel from this repository.
+- Site: [abwab-and-more.vercel.app](https://abwab-and-more.vercel.app)
+- Repo: [github.com/diamitani/abwab-and-more](https://github.com/diamitani/abwab-and-more)
+
+Proposal page: [abwab-and-more.vercel.app/proposal](https://abwab-and-more.vercel.app/proposal)
 
 ## What’s in the mockup
 
@@ -23,6 +26,8 @@ npm run dev
 ```
 
 Auth is off (`VITE_AUTH_ENABLED=false`). The concierge needs `XAI_API_KEY` on the server; without it, the widget still opens and explains it is unavailable.
+
+To enable the concierge on Vercel, add `XAI_API_KEY` in the project environment variables (Production + Preview).
 
 ## Proposal investment
 
