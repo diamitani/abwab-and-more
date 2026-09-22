@@ -14,6 +14,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as AtelierRouteImport } from './routes/atelier'
 import { Route as CollectionsRouteImport } from './routes/collections'
 import { Route as ProposalRouteImport } from './routes/proposal'
+import { Route as ProposalPdfRouteImport } from './routes/proposal-pdf'
 import { Route as QuoteRouteImport } from './routes/quote'
 import { Route as ProductsSlugRouteImport } from './routes/products.$slug'
 
@@ -42,6 +43,11 @@ const ProposalRoute = ProposalRouteImport.update({
   path: '/proposal',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProposalPdfRoute = ProposalPdfRouteImport.update({
+  id: '/proposal-pdf',
+  path: '/proposal-pdf',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const QuoteRoute = QuoteRouteImport.update({
   id: '/quote',
   path: '/quote',
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/atelier': typeof AtelierRoute
   '/collections': typeof CollectionsRoute
   '/proposal': typeof ProposalRoute
+  '/proposal-pdf': typeof ProposalPdfRoute
   '/quote': typeof QuoteRoute
   '/products/$slug': typeof ProductsSlugRoute
 }
@@ -68,6 +75,7 @@ export interface FileRoutesByTo {
   '/atelier': typeof AtelierRoute
   '/collections': typeof CollectionsRoute
   '/proposal': typeof ProposalRoute
+  '/proposal-pdf': typeof ProposalPdfRoute
   '/quote': typeof QuoteRoute
   '/products/$slug': typeof ProductsSlugRoute
 }
@@ -78,6 +86,7 @@ export interface FileRoutesById {
   '/atelier': typeof AtelierRoute
   '/collections': typeof CollectionsRoute
   '/proposal': typeof ProposalRoute
+  '/proposal-pdf': typeof ProposalPdfRoute
   '/quote': typeof QuoteRoute
   '/products/$slug': typeof ProductsSlugRoute
 }
@@ -89,6 +98,7 @@ export interface FileRouteTypes {
     | '/atelier'
     | '/collections'
     | '/proposal'
+    | '/proposal-pdf'
     | '/quote'
     | '/products/$slug'
   fileRoutesByTo: FileRoutesByTo
@@ -98,6 +108,7 @@ export interface FileRouteTypes {
     | '/atelier'
     | '/collections'
     | '/proposal'
+    | '/proposal-pdf'
     | '/quote'
     | '/products/$slug'
   id:
@@ -107,6 +118,7 @@ export interface FileRouteTypes {
     | '/atelier'
     | '/collections'
     | '/proposal'
+    | '/proposal-pdf'
     | '/quote'
     | '/products/$slug'
   fileRoutesById: FileRoutesById
@@ -117,6 +129,7 @@ export interface RootRouteChildren {
   AtelierRoute: typeof AtelierRoute
   CollectionsRoute: typeof CollectionsRoute
   ProposalRoute: typeof ProposalRoute
+  ProposalPdfRoute: typeof ProposalPdfRoute
   QuoteRoute: typeof QuoteRoute
   ProductsSlugRoute: typeof ProductsSlugRoute
 }
@@ -158,6 +171,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProposalRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/proposal-pdf': {
+      id: '/proposal-pdf'
+      path: '/proposal-pdf'
+      fullPath: '/proposal-pdf'
+      preLoaderRoute: typeof ProposalPdfRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/quote': {
       id: '/quote'
       path: '/quote'
@@ -181,6 +201,7 @@ const rootRouteChildren: RootRouteChildren = {
   AtelierRoute: AtelierRoute,
   CollectionsRoute: CollectionsRoute,
   ProposalRoute: ProposalRoute,
+  ProposalPdfRoute: ProposalPdfRoute,
   QuoteRoute: QuoteRoute,
   ProductsSlugRoute: ProductsSlugRoute,
 }
