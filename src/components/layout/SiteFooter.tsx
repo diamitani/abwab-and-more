@@ -69,7 +69,7 @@ export function SiteFooter() {
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-cream/45 sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <p>© {new Date().getFullYear()} ABWAB & More. All rights reserved.</p>
           <Link to="/proposal" className="tracking-[0.14em] uppercase hover:text-bronze">
-            Proposal · SalesGency × UYSG
+            SalesGency proposal
           </Link>
         </div>
       </div>

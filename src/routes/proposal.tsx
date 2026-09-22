@@ -1,282 +1,361 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { SiteShell } from "@/components/layout/SiteShell";
-import { Button } from "@/components/ui/button";
+import { SalesGencyMark } from "@/components/brand/SalesGencyMark";
 
 export const Route = createFileRoute("/proposal")({ component: ProposalPage });
 
-const WEBSITE_SCOPE = [
+const WEBSITE = [
   [
-    "Continue the build",
-    "This live mockup is the starting point — not a throwaway. We finish collections, product stories, atelier, quote, and the concierge, then take it to production quality.",
+    "Continue this mockup",
+    "The live site is the starting point. We finish collections, product pages, atelier, about, and quote — then take it to production.",
   ],
   [
     "Three design revisions",
-    "Kickoff pass, content pass, pre-launch pass. Each is a structured review — not unlimited tinkering. The catalog language stays the north star.",
+    "Kickoff, content, and pre-launch. Each is a structured review. The catalog language stays the source of truth.",
   ],
   [
     "Additional content",
-    "We connect further photography, finishes, kitchen and dressing-room stories, and any copy you supply so the site is a working catalog, not a sample.",
+    "Photography, finishes, kitchen and dressing-room stories, and copy you supply — connected so this is a working catalog, not a sample.",
   ],
   [
-    "Domain and backend transfer",
-    "Launch on your domain. Hand the project to your hosting and backend, with environment, DNS notes, and a clean repository — the site becomes yours.",
+    "Your domain and backend",
+    "Launch on your domain. Transfer hosting, environment, and the repository. The site and the records stay yours.",
   ],
   [
     "Two to three meetings",
-    "Kickoff, mid-build review, launch handoff. Short, decisive, with the mockup on the table so nothing is abstract.",
+    "Diagnose, build review, launch. Short sessions with the mockup on the table so nothing is abstract.",
   ],
 ];
 
-const ENGINE_SCOPE = [
+const ENGINE = [
   [
-    "Quote and inbound AI",
-    "On-site concierge that knows the catalog, qualifies the project, and captures every inbound — web, after hours, first inquiry.",
+    "Inbound conversion",
+    "Qualify, enrich and route every quote and inbound lead to the right owner, with the right next action.",
   ],
   [
-    "CRM wiring",
-    "Leads, quote briefs, and conversation context written into your system. No platform tax. You own the records.",
+    "Installed in your CRM",
+    "Leads, quote briefs and conversation context written into your system. We do not replace your stack.",
   ],
   [
     "Daily reports",
-    "A morning digest: new inquiries, estimates issued, unanswered threads, and what needs a human next.",
+    "A morning digest: new inquiries, estimates issued, unanswered threads, and what needs a person next.",
   ],
   [
     "Auto-responder",
-    "Every lead gets a timely, on-brand first reply so no architect or homeowner waits on a missed call.",
+    "Every inbound gets a timely first reply so no architect or homeowner waits on a missed call.",
   ],
 ];
 
 function ProposalPage() {
   return (
-    <SiteShell>
-      <article className="bg-sg-black text-cream">
-        <div className="mx-auto max-w-3xl px-5 pt-28 pb-16 sm:px-8">
-          <p className="text-[10px] tracking-[0.36em] text-sg-gold uppercase">
-            SalesGency · in partnership with
-          </p>
-          <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:items-center">
-            <img
-              src="/images/agency/uysg-pegasus.png"
-              alt="Unleash Your Sales Greatness — winged horse on a red shield"
-              width={112}
-              height={92}
-              className="h-24 w-auto shrink-0 object-contain outline-none sm:h-28"
-            />
-            <div>
-              <p className="font-display text-3xl leading-[0.95] tracking-[0.08em] text-sg-gold uppercase sm:text-4xl">
-                Unleash your
-                <br />
-                sales greatness
-              </p>
-              <p className="mt-3 max-w-sm text-sm leading-relaxed text-cream/70">
-                A proposal to finish ABWAB & More’s digital house, transfer it
-                to their domain, and install a quote-and-lead engine in their
-                stack.
-              </p>
-            </div>
-          </div>
+    <div className="min-h-svh bg-sg-mist font-sg text-sg-slate">
+      <header className="border-b border-sg-line bg-sg-mist">
+        <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-5 sm:px-8">
+          <SalesGencyMark className="text-xl" />
+          <Link
+            to="/"
+            className="text-sm font-medium text-sg-action hover:underline"
+          >
+            View the ABWAB mockup
+          </Link>
+        </div>
+      </header>
 
-          <div className="mt-10 grid grid-cols-2 gap-3 border-y border-sg-gold/25 py-5 sm:grid-cols-4">
+      <section className="sg-hero text-white">
+        <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-24">
+          <p className="text-xs font-medium tracking-widest text-white/55 uppercase">
+            Proposal · September 2026 · Prepared for ABWAB & More
+          </p>
+          <h1 className="mt-6 max-w-3xl font-sans text-5xl leading-[1.02] font-extrabold tracking-tight sm:text-6xl">
+            Installed in your stack.
+            <span className="mt-2 block text-sg-cyan">Built to be trusted.</span>
+          </h1>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/75">
+            A custom build for ABWAB & More: finish the website you are walking,
+            move it onto your domain, and install an inbound conversion workflow
+            so every quote gets worked.
+          </p>
+          <p className="mt-8 font-sans text-4xl font-extrabold tracking-tight tabular-nums">
+            $10,000
+          </p>
+          <p className="mt-2 text-sm text-white/55">
+            One engagement. Website plus inbound conversion. Client-owned.
+          </p>
+        </div>
+      </section>
+
+      <main className="mx-auto max-w-5xl space-y-20 px-5 py-16 sm:px-8 sm:py-20">
+        <section>
+          <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
+            Essence
+          </p>
+          <h2 className="mt-3 max-w-2xl font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
+            Lead with the result. Prove it with the system.
+          </h2>
+          <p className="mt-4 max-w-2xl leading-relaxed">
+            SalesGency installs AI revenue workflows inside your existing stack,
+            so every lead gets worked, every conversation becomes usable data,
+            and every next step moves forward. In partnership with Unleash Your
+            Sales Greatness.
+          </p>
+          <div className="mt-10 grid gap-8 border-t border-sg-line pt-8 sm:grid-cols-3">
             {[
-              ["$10,000", "Finished engagement"],
-              ["3", "Design revisions"],
-              ["2–3", "Working meetings"],
-              ["Yours", "Domain & CRM"],
-            ].map(([stat, label]) => (
-              <div key={label}>
-                <p className="font-display text-2xl text-sg-gold">{stat}</p>
-                <p className="mt-1 text-[10px] tracking-[0.18em] text-cream/55 uppercase">
-                  {label}
-                </p>
+              [
+                "1. Outcome",
+                "More inbound quotes get worked. Less revenue work is lost to missed calls, handoffs and incomplete briefs.",
+              ],
+              [
+                "2. Mechanism",
+                "We finish the site and install an inbound conversion workflow across web, CRM, daily reports and first reply.",
+              ],
+              [
+                "3. Proof",
+                "You are already on the mockup. This is not a generic demo — it is the catalog, live, waiting to be transferred.",
+              ],
+            ].map(([title, copy]) => (
+              <div key={title}>
+                <h3 className="font-sans text-lg font-bold text-sg-ink">{title}</h3>
+                <p className="mt-2 text-sm leading-relaxed">{copy}</p>
               </div>
             ))}
           </div>
+        </section>
 
-          <p className="mt-8 text-[11px] tracking-[0.32em] text-bronze uppercase">
-            Confidential · September 2026 · Prepared for ABWAB & More
+        <section className="grid gap-10 sm:grid-cols-2">
+          <div>
+            <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
+              Prepared for
+            </p>
+            <p className="mt-2 font-sans text-2xl font-extrabold tracking-tight text-sg-ink">
+              ABWAB & More
+            </p>
+            <p className="mt-2 text-sm leading-relaxed">
+              Doors, kitchens, dressing rooms. This live mockup is the sample of
+              work you would be paying to finish, host on your domain, and own.
+            </p>
+          </div>
+          <div>
+            <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
+              Prepared by
+            </p>
+            <SalesGencyMark className="mt-2 text-2xl" />
+            <p className="mt-2 text-sm leading-relaxed">
+              AI revenue workflows for modern GTM teams. A d/b/a of Diamitani
+              Industries, in partnership with Unleash Your Sales Greatness.
+            </p>
+            <p className="mt-3 text-sm">
+              <a
+                className="font-medium text-sg-action hover:underline"
+                href="mailto:hello@salesgency.com"
+              >
+                hello@salesgency.com
+              </a>
+              {" · "}
+              <a
+                className="font-medium text-sg-action hover:underline"
+                href="https://www.salesgency.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                salesgency.com
+              </a>
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
+            Custom scope · website
           </p>
-          <h1 className="font-display mt-4 text-5xl leading-[0.95] sm:text-6xl">
-            Finish the house.
-            <br />
-            Wire the inbound.
-          </h1>
-        </div>
-      </article>
-
-      <div className="bg-cream">
-        <div className="mx-auto max-w-3xl space-y-14 px-5 py-16 sm:px-8">
-          <section className="grid gap-8 sm:grid-cols-2">
-            <div>
-              <h2 className="text-[11px] tracking-[0.22em] text-bronze uppercase">
-                Prepared for
-              </h2>
-              <p className="font-display mt-2 text-2xl text-ink">ABWAB & More</p>
-              <p className="mt-2 text-sm leading-relaxed text-muted">
-                Doors, kitchens, dressing rooms. Crafted with integrity.
-                Designed to last. This live mockup is the sample of work.
-              </p>
-            </div>
-            <div>
-              <h2 className="text-[11px] tracking-[0.22em] text-bronze uppercase">
-                Prepared by
-              </h2>
-              <p className="font-display mt-2 text-2xl text-ink">SalesGency</p>
-              <p className="mt-2 text-sm leading-relaxed text-muted">
-                AI revenue workflows installed in your stack — in partnership
-                with Unleash Your Sales Greatness. Helping take the fear out of
-                selling.
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="font-display text-3xl text-ink">The opportunity</h2>
-            <p className="mt-3 text-muted leading-relaxed">
-              The catalog already has a language. The mockup already has a
-              house. What remains is to finish it, put it on your domain, and
-              make sure every inbound — a midnight quote, a showroom follow-up,
-              an architect’s first note — lands in your CRM with a reply already
-              sent.
-            </p>
-            <p className="mt-4 text-muted leading-relaxed">
-              We do not sell a rented platform. The site, the agent, and the
-              records are yours.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-display text-3xl text-ink">
-              01 · The website · $7,000
-            </h2>
-            <p className="mt-3 text-muted leading-relaxed">
-              Continue this build through launch. Three design revisions.
-              Additional content connected. Two to three meetings. Transfer to
-              your domain and backend.
-            </p>
-            <ol className="mt-6 space-y-5">
-              {WEBSITE_SCOPE.map(([title, copy], i) => (
-                <li key={title} className="grid grid-cols-[48px_1fr] gap-4">
-                  <span className="font-display text-2xl text-bronze">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <h3 className="text-sm tracking-[0.16em] text-ink uppercase">
-                      {title}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted">{copy}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </section>
-
-          <section>
-            <h2 className="font-display text-3xl text-ink">
-              02 · The lead engine · $3,000
-            </h2>
-            <p className="mt-3 text-muted leading-relaxed">
-              A chat AI that handles quotes and inbound leads, wired into your
-              CRM, with daily reports and an auto-responder — so the atelier
-              never starts from a blank inbox.
-            </p>
-            <ol className="mt-6 space-y-5">
-              {ENGINE_SCOPE.map(([title, copy], i) => (
-                <li key={title} className="grid grid-cols-[48px_1fr] gap-4">
-                  <span className="font-display text-2xl text-sg-red">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <h3 className="text-sm tracking-[0.16em] text-ink uppercase">
-                      {title}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted">{copy}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </section>
-
-          <section>
-            <h2 className="font-display text-3xl text-ink">Investment</h2>
-            <div className="mt-6 divide-y divide-sand border-y border-sand">
-              {[
-                [
-                  "Website",
-                  "Continue the mockup, 3 design revisions, additional content, 2–3 meetings, domain and backend transfer",
-                  "$7,000",
-                ],
-                [
-                  "Chat AI & lead system",
-                  "Quotes, inbound leads, CRM wiring, daily reports, auto-responder",
-                  "$3,000",
-                ],
-              ].map(([item, note, price]) => (
-                <div key={item} className="flex items-baseline justify-between gap-4 py-4">
-                  <div>
-                    <p className="text-ink">{item}</p>
-                    <p className="text-sm text-muted">{note}</p>
-                  </div>
-                  <p className="shrink-0 font-display text-xl text-ink">{price}</p>
+          <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
+            Finish the catalog. Transfer it to you.
+          </h2>
+          <p className="mt-4 max-w-2xl leading-relaxed">
+            $7,000 to continue this build through launch — three design
+            revisions, additional content, two to three meetings, and transfer
+            to your domain and backend.
+          </p>
+          <ol className="mt-8 space-y-6">
+            {WEBSITE.map(([title, copy], i) => (
+              <li key={title} className="grid grid-cols-[3rem_1fr] gap-4">
+                <span className="font-sans text-xl font-extrabold tabular-nums text-sg-action">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h3 className="font-sans font-bold text-sg-ink">{title}</h3>
+                  <p className="mt-1 text-sm leading-relaxed">{copy}</p>
                 </div>
-              ))}
-              <div className="flex items-baseline justify-between gap-4 py-4">
-                <p className="font-display text-2xl text-ink">Total</p>
-                <p className="font-display text-3xl text-ink">$10,000</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section>
+          <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
+            Engine 01 · inbound conversion
+          </p>
+          <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
+            Work every inbound. Write it back to your CRM.
+          </h2>
+          <p className="mt-4 max-w-2xl leading-relaxed">
+            $3,000 to install a quote-and-lead workflow in your stack: the
+            on-site concierge, CRM wiring, daily reports, and an auto-responder.
+            Your tools are not the problem. The gaps between them are.
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {ENGINE.map(([title, copy]) => (
+              <div
+                key={title}
+                className="rounded-lg border border-sg-line bg-white p-6"
+              >
+                <h3 className="font-sans font-bold text-sg-ink">{title}</h3>
+                <p className="mt-2 text-sm leading-relaxed">{copy}</p>
               </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
+            Investment
+          </p>
+          <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
+            One engagement. $10,000.
+          </h2>
+          <div className="mt-8 divide-y divide-sg-line border-y border-sg-line">
+            {[
+              [
+                "Website",
+                "Continue the mockup, 3 design revisions, additional content, 2–3 meetings, domain and backend transfer",
+                "$7,000",
+              ],
+              [
+                "Inbound conversion workflow",
+                "Quotes, inbound leads, CRM wiring, daily reports, auto-responder — installed in your stack",
+                "$3,000",
+              ],
+            ].map(([item, note, price]) => (
+              <div
+                key={item}
+                className="flex items-baseline justify-between gap-4 py-5"
+              >
+                <div>
+                  <p className="font-sans font-bold text-sg-ink">{item}</p>
+                  <p className="mt-1 text-sm">{note}</p>
+                </div>
+                <p className="shrink-0 font-sans text-xl font-extrabold tabular-nums text-sg-ink">
+                  {price}
+                </p>
+              </div>
+            ))}
+            <div className="flex items-baseline justify-between gap-4 py-5">
+              <p className="font-sans text-2xl font-extrabold text-sg-ink">
+                Total due from ABWAB & More
+              </p>
+              <p className="font-sans text-3xl font-extrabold tabular-nums text-sg-ink">
+                $10,000
+              </p>
             </div>
-            <p className="mt-6 text-sm text-muted">
-              One engagement. No monthly platform fee in this figure. Hosting
-              on your account after transfer. Further care, if wanted, is a
-              separate conversation after launch.
-            </p>
-          </section>
+          </div>
+          <p className="mt-6 text-sm leading-relaxed">
+            Payment is 50% at signed SOW and 50% on delivery. Three design
+            revisions are included in this custom scope. Client data and
+            credentials stay the client’s. No monthly platform fee in this
+            figure — hosting sits on your account after transfer.
+          </p>
+        </section>
 
-          <section>
-            <h2 className="font-display text-3xl text-ink">How we work</h2>
-            <ul className="mt-4 space-y-2 text-sm leading-relaxed text-muted">
-              <li>Meeting 1 — kickoff: domain, CRM, content, first design revision.</li>
-              <li>Meeting 2 — mid-build: content connected, second revision, lead-flow review.</li>
-              <li>Meeting 3 — launch: third revision, transfer, auto-responder live.</li>
-            </ul>
-            <p className="mt-4 text-muted leading-relaxed">
-              Typical path from approval to public launch: three to four weeks.
-              The mockup you are standing in is already the first stretch of
-              work.
-            </p>
-          </section>
+        <section>
+          <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
+            How it works
+          </p>
+          <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
+            Built around your process, not a generic demo.
+          </h2>
+          <div className="mt-10 grid gap-8 border-t border-sg-line pt-8 sm:grid-cols-3">
+            {[
+              [
+                "Step 1",
+                "Diagnose",
+                "Kickoff: domain, CRM, content, first design revision. Map handoffs and the work that is slow or invisible.",
+              ],
+              [
+                "Step 2",
+                "Build",
+                "Connect content, second revision, inbound workflow in your CRM. Guardrails and real quote scenarios.",
+              ],
+              [
+                "Step 3",
+                "Launch",
+                "Third revision, transfer to your domain, auto-responder live, ownership documented.",
+              ],
+            ].map(([step, title, copy]) => (
+              <div key={step}>
+                <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
+                  {step}
+                </p>
+                <h3 className="mt-2 font-sans text-2xl font-extrabold text-sg-ink">
+                  {title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed">{copy}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
 
-          <section className="border border-sand bg-surface p-8">
-            <div className="mb-6 bg-sg-black px-4 py-3">
+      <section className="sg-hero text-white">
+        <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
+          <p className="text-xs font-medium tracking-widest text-white/55 uppercase">
+            Next step
+          </p>
+          <h2 className="mt-3 max-w-2xl font-sans text-4xl font-extrabold tracking-tight sm:text-5xl">
+            Stop losing inbound quotes to a missed call.
+          </h2>
+          <p className="mt-4 max-w-xl text-white/75 leading-relaxed">
+            If this mockup is the house you want, ABWAB & More pays $10,000 for
+            SalesGency to finish it, transfer it, and install the inbound
+            workflow. Walk the catalog. Then tell us to proceed.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link
+              to="/"
+              className="inline-flex h-12 items-center bg-white px-6 font-sans text-sm font-semibold text-sg-ink hover:bg-sg-mist"
+            >
+              Walk the mockup
+            </Link>
+            <a
+              href="mailto:hello@salesgency.com?subject=ABWAB%20%26%20More%20proposal"
+              className="inline-flex h-12 items-center border border-white/30 px-6 font-sans text-sm font-semibold text-white hover:border-white"
+            >
+              hello@salesgency.com
+            </a>
+          </div>
+          <div className="mt-16 flex flex-col gap-6 border-t border-white/15 pt-8 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <SalesGencyMark tone="reversed" className="text-2xl" />
+              <p className="mt-2 text-sm text-white/55">
+                hello@salesgency.com · salesgency.com
+                <br />
+                SalesGency is a d/b/a of Diamitani Industries.
+              </p>
+            </div>
+            <div className="flex items-center gap-3">
               <img
-                src="/images/agency/uysg-lockup.png"
-                alt="Unleash Your Sales Greatness"
-                width={640}
-                height={160}
-                className="h-14 w-auto max-w-full object-contain object-left outline-none"
+                src="/images/agency/uysg-pegasus.png"
+                alt=""
+                width={48}
+                height={40}
+                className="h-10 w-auto object-contain outline-none"
               />
+              <p className="text-xs text-white/50">
+                In partnership with
+                <br />
+                Unleash Your Sales Greatness
+              </p>
             </div>
-            <h2 className="font-display text-3xl text-ink">A request</h2>
-            <p className="mt-4 text-muted leading-relaxed">
-              If this house feels like yours, we ask to finish it. $7,000 to
-              complete the site, revise it three times, connect your content,
-              meet two or three times, and move it onto your domain. $3,000 to
-              put a quote-and-lead AI in your CRM with daily reports and an
-              auto-responder. $10,000 total.
-            </p>
-            <p className="mt-4 text-sm tracking-[0.14em] text-ink uppercase">
-              SalesGency · Unleash Your Sales Greatness
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild variant="ink" className="uppercase tracking-[0.16em]">
-                <Link to="/">Walk the site</Link>
-              </Button>
-              <Button asChild variant="cream" className="uppercase tracking-[0.16em]">
-                <Link to="/quote">Leave a note</Link>
-              </Button>
-            </div>
-          </section>
+          </div>
         </div>
-      </div>
-    </SiteShell>
+      </section>
+    </div>
   );
 }

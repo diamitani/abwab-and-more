@@ -36,5 +36,5 @@ Prepared by **SalesGency** in partnership with **Unleash Your Sales Greatness**.
 | Line | Amount |
 |---|---|
 | Website — continue the mockup, 3 design revisions, additional content, 2–3 meetings, domain + backend transfer | $7,000 |
-| Chat AI — quotes, inbound leads, CRM wiring, daily reports, auto-responder | $3,000 |
+| Inbound conversion — quotes, inbound leads, CRM wiring, daily reports, auto-responder | $3,000 |
 | **Total** | **$10,000** |
