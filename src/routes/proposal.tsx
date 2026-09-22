@@ -204,7 +204,7 @@ function ProposalPage() {
           </div>
         </section>
 
-        <section>
+        <section className="break-inside-avoid">
           <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
             Presenters
           </p>
