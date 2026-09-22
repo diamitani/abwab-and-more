@@ -98,6 +98,11 @@
   a {
     text-decoration: none;
   }
+
+  .sg-hero > div {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -118,7 +118,7 @@ function ProposalPage() {
         </div>
       </section>
 
-      <main className="mx-auto max-w-5xl space-y-20 px-5 py-16 sm:px-8 sm:py-20">
+      <main className="mx-auto max-w-5xl space-y-16 px-5 py-16 print:space-y-10 print:py-8 sm:px-8 sm:py-20">
         <section>
           <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
             What you are buying
@@ -419,8 +419,8 @@ function ProposalPage() {
         </section>
       </main>
 
-      <section className="sg-hero text-white">
-        <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
+      <section className="sg-hero break-inside-avoid text-white">
+        <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20 print:py-10">
           <p className="text-xs font-medium tracking-widest text-white/55 uppercase">
             Decision
           </p>
@@ -460,7 +460,7 @@ function ProposalPage() {
               hello@salesgency.com
             </a>
           </div>
-          <div className="mt-16 flex flex-col gap-6 border-t border-white/15 pt-8 sm:flex-row sm:items-end sm:justify-between">
+          <div className="mt-16 flex flex-col gap-6 border-t border-white/15 pt-8 print:mt-8 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <SalesGencyMark tone="reversed" className="text-2xl" />
               <p className="mt-2 text-sm text-white/55">
