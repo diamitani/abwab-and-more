@@ -63,15 +63,22 @@ function ProposalPage() {
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between gap-4 px-5 sm:px-8">
           <SalesGencyMark className="text-xl" />
           <div className="flex items-center gap-5">
+            <Link
+              to="/proposal-pdf"
+              className="text-sm font-medium text-sg-action hover:underline"
+            >
+              View 6-page PDF
+            </Link>
             <a
               href={PDF_HREF}
-              className="text-sm font-medium text-sg-action hover:underline"
+              download="ABWAB-SalesGency-Proposal.pdf"
+              className="inline-flex h-9 items-center bg-sg-ink px-3 font-sans text-sm font-semibold text-white"
             >
               Download PDF
             </a>
             <Link
               to="/"
-              className="text-sm font-medium text-sg-action hover:underline"
+              className="hidden text-sm font-medium text-sg-action hover:underline sm:inline"
             >
               View the ABWAB mockup
             </Link>
@@ -410,9 +417,16 @@ function ProposalPage() {
             workflow. Walk the catalog. Then tell us to proceed.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 print:hidden">
+            <Link
+              to="/proposal-pdf"
+              className="inline-flex h-12 items-center bg-white px-6 font-sans text-sm font-semibold text-sg-ink hover:bg-sg-mist"
+            >
+              View 6-page PDF
+            </Link>
             <a
               href={PDF_HREF}
-              className="inline-flex h-12 items-center bg-white px-6 font-sans text-sm font-semibold text-sg-ink hover:bg-sg-mist"
+              download="ABWAB-SalesGency-Proposal.pdf"
+              className="inline-flex h-12 items-center border border-white/30 px-6 font-sans text-sm font-semibold text-white hover:border-white"
             >
               Download PDF
             </a>

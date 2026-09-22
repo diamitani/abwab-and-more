@@ -9,6 +9,7 @@ const NAV = [
   { to: "/collections", label: "Collections" },
   { to: "/atelier", label: "Atelier" },
   { to: "/about", label: "About" },
+  { to: "/proposal-pdf", label: "Proposal" },
 ];
 
 export function SiteHeader() {
