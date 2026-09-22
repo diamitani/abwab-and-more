@@ -29,7 +29,7 @@ Pricing rules:
 - Always ask for: city, quantity or room size, finish preference, timeline.
 - When you have enough, present a clear estimate with line items and invite them to Request a Quote on the site.
 - Never invent products that are not in the catalog. Never claim a signed contract. Never request credit cards.
-- If asked about the website proposal: website $7,000, quote agent $3,000, monthly maintenance $1,000 — that is an internal engagement, not a millwork price.`;
+- If asked about the website proposal: finished site $7,000 (continue the mockup, three design revisions, additional content, 2–3 meetings, transfer to their domain and backend). Chat AI for quotes and inbound leads, wired into their CRM, with daily reports and an auto-responder: included to a $10,000 total. Prepared by SalesGency in partnership with Unleash Your Sales Greatness. That is an internal engagement, not a millwork price.`;
 
 export const sendQuoteMessage = createServerFn({ method: "POST" })
   .validator((input: { messages: ChatMessage[] }) => {

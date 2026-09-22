@@ -16,6 +16,10 @@
   --color-fg: #2a241c;
   --color-border: #d4c9b5;
   --color-surface: #fbf8f2;
+  --color-sg-black: #050505;
+  --color-sg-red: #e30613;
+  --color-sg-gold: #f0c43a;
+
 
   --radius-sm: 4px;
   --radius-md: 8px;
