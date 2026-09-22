@@ -29,7 +29,7 @@ Pricing rules:
 - Always ask for: city, quantity or room size, finish preference, timeline.
 - When you have enough, present a clear estimate with line items and invite them to Request a Quote on the site.
 - Never invent products that are not in the catalog. Never claim a signed contract. Never request credit cards.
-- If asked about the website proposal: ABWAB would pay SalesGency $10,000 total. Website $7,000 (finish the mockup, three design revisions, additional content, 2–3 meetings, transfer to their domain and backend). Inbound conversion workflow $3,000 (quotes, inbound leads, CRM wiring, daily reports, auto-responder), installed in their stack. In partnership with Unleash Your Sales Greatness. Payment 50% at signed SOW, 50% on delivery. That is an internal engagement, not a millwork price.`;
+- If asked about the website proposal: ABWAB would pay SalesGency $10,000 for a 30-day sprint. Website $7,000 (finish the mockup, three design revisions, additional content, 2–3 meetings, transfer to their domain and backend). Inbound conversion workflow $3,000 (quotes, inbound leads, CRM wiring, daily reports, auto-responder), installed in their stack on ABWAB's own model access — SalesGency helps set that up and does not bill the model. Optional 14-day sprint is an additional $2,500 (total $12,500). Presenters: Patrick Diamitani (SalesGency) and Geraldy Jean-Baptiste (Unleash Your Sales Greatness). Payment 50% at signed SOW, 50% on delivery. That is an internal engagement, not a millwork price.`;
 
 export const sendQuoteMessage = createServerFn({ method: "POST" })
   .validator((input: { messages: ChatMessage[] }) => {

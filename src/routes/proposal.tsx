@@ -3,6 +3,8 @@ import { SalesGencyMark } from "@/components/brand/SalesGencyMark";
 
 export const Route = createFileRoute("/proposal")({ component: ProposalPage });
 
+const PDF_HREF = "/abwab-salesgency-proposal.pdf";
+
 const WEBSITE = [
   [
     "Continue this mockup",
@@ -45,18 +47,35 @@ const ENGINE = [
   ],
 ];
 
+const PRESENTERS = [
+  ["Patrick Diamitani", "SalesGency", "GTM AI and automation. Delivery owner for the site, CRM wiring, and launch."],
+  [
+    "Geraldy Jean-Baptiste",
+    "Unleash Your Sales Greatness",
+    "Sales process and inbound motion. Partner on how quotes get worked once they land.",
+  ],
+];
+
 function ProposalPage() {
   return (
     <div className="min-h-svh bg-sg-mist font-sg text-sg-slate">
-      <header className="border-b border-sg-line bg-sg-mist">
-        <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-5 sm:px-8">
+      <header className="border-b border-sg-line bg-sg-mist print:hidden">
+        <div className="mx-auto flex h-16 max-w-5xl items-center justify-between gap-4 px-5 sm:px-8">
           <SalesGencyMark className="text-xl" />
-          <Link
-            to="/"
-            className="text-sm font-medium text-sg-action hover:underline"
-          >
-            View the ABWAB mockup
-          </Link>
+          <div className="flex items-center gap-5">
+            <a
+              href={PDF_HREF}
+              className="text-sm font-medium text-sg-action hover:underline"
+            >
+              Download PDF
+            </a>
+            <Link
+              to="/"
+              className="text-sm font-medium text-sg-action hover:underline"
+            >
+              View the ABWAB mockup
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -72,13 +91,14 @@ function ProposalPage() {
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/75">
             A custom build for ABWAB & More: finish the website you are walking,
             move it onto your domain, and install an inbound conversion workflow
-            so every quote gets worked.
+            so every quote gets worked. Standard delivery is a 30-day sprint.
           </p>
           <p className="mt-8 font-sans text-4xl font-extrabold tracking-tight tabular-nums">
             $10,000
           </p>
           <p className="mt-2 text-sm text-white/55">
-            One engagement. Website plus inbound conversion. Client-owned.
+            30-day sprint. Website plus inbound conversion. Client-owned.
+            Optional 14-day sprint +$2,500.
           </p>
         </div>
       </section>
@@ -164,6 +184,29 @@ function ProposalPage() {
 
         <section>
           <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
+            Presenters
+          </p>
+          <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
+            Who is in the room.
+          </h2>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {PRESENTERS.map(([name, org, copy]) => (
+              <div
+                key={name}
+                className="rounded-lg border border-sg-line bg-white p-6"
+              >
+                <p className="font-sans text-xl font-extrabold tracking-tight text-sg-ink">
+                  {name}
+                </p>
+                <p className="mt-1 text-sm font-medium text-sg-action">{org}</p>
+                <p className="mt-3 text-sm leading-relaxed">{copy}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
             Custom scope · website
           </p>
           <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
@@ -216,10 +259,26 @@ function ProposalPage() {
 
         <section>
           <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
+            Model access
+          </p>
+          <h2 className="mt-3 max-w-2xl font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
+            The concierge runs on your models. We help you set that up.
+          </h2>
+          <p className="mt-4 max-w-2xl leading-relaxed">
+            ABWAB needs its own model access for the quote concierge — your
+            keys, your vendor, your billing. SalesGency does not host or resell
+            the model. We help you choose access, put credentials in your
+            environment, and wire the concierge into the site and CRM so it is
+            installed in your stack.
+          </p>
+        </section>
+
+        <section>
+          <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
             Investment
           </p>
           <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
-            One engagement. $10,000.
+            One engagement. 30-day sprint. $10,000.
           </h2>
           <div className="mt-8 divide-y divide-sg-line border-y border-sg-line">
             {[
@@ -230,8 +289,13 @@ function ProposalPage() {
               ],
               [
                 "Inbound conversion workflow",
-                "Quotes, inbound leads, CRM wiring, daily reports, auto-responder — installed in your stack",
+                "Quotes, inbound leads, CRM wiring, daily reports, auto-responder — installed in your stack, on your models",
                 "$3,000",
+              ],
+              [
+                "30-day sprint",
+                "Standard delivery window. Included.",
+                "Included",
               ],
             ].map(([item, note, price]) => (
               <div
@@ -256,11 +320,36 @@ function ProposalPage() {
               </p>
             </div>
           </div>
+
+          <div className="mt-8 rounded-lg border border-sg-line bg-white p-6">
+            <p className="text-xs font-medium tracking-widest text-sg-action uppercase">
+              Optional
+            </p>
+            <div className="mt-3 flex items-baseline justify-between gap-4">
+              <div>
+                <p className="font-sans text-lg font-extrabold text-sg-ink">
+                  14-day sprint
+                </p>
+                <p className="mt-1 text-sm leading-relaxed">
+                  Compress the same scope into two weeks. Additional fee on top
+                  of the $10,000 engagement.
+                </p>
+              </div>
+              <p className="shrink-0 font-sans text-xl font-extrabold tabular-nums text-sg-ink">
+                +$2,500
+              </p>
+            </div>
+            <p className="mt-3 text-sm text-sg-caption">
+              With the 14-day option the total is $12,500.
+            </p>
+          </div>
+
           <p className="mt-6 text-sm leading-relaxed">
             Payment is 50% at signed SOW and 50% on delivery. Three design
-            revisions are included in this custom scope. Client data and
-            credentials stay the client’s. No monthly platform fee in this
-            figure — hosting sits on your account after transfer.
+            revisions are included. Client data, credentials, and model access
+            stay the client’s. No monthly platform fee in this figure — hosting
+            sits on your account after transfer. Model usage is billed by your
+            provider, not by SalesGency.
           </p>
         </section>
 
@@ -271,17 +360,21 @@ function ProposalPage() {
           <h2 className="mt-3 font-sans text-4xl font-extrabold tracking-tight text-sg-ink">
             Built around your process, not a generic demo.
           </h2>
+          <p className="mt-4 max-w-2xl leading-relaxed">
+            Standard path is 30 days from signed SOW to launch. The 14-day
+            option is the same three steps, compressed.
+          </p>
           <div className="mt-10 grid gap-8 border-t border-sg-line pt-8 sm:grid-cols-3">
             {[
               [
                 "Step 1",
                 "Diagnose",
-                "Kickoff: domain, CRM, content, first design revision. Map handoffs and the work that is slow or invisible.",
+                "Kickoff: domain, CRM, model access, content, first design revision. Map handoffs and the work that is slow or invisible.",
               ],
               [
                 "Step 2",
                 "Build",
-                "Connect content, second revision, inbound workflow in your CRM. Guardrails and real quote scenarios.",
+                "Connect content, second revision, inbound workflow in your CRM on your models. Guardrails and real quote scenarios.",
               ],
               [
                 "Step 3",
@@ -313,13 +406,19 @@ function ProposalPage() {
           </h2>
           <p className="mt-4 max-w-xl text-white/75 leading-relaxed">
             If this mockup is the house you want, ABWAB & More pays $10,000 for
-            SalesGency to finish it, transfer it, and install the inbound
+            a 30-day sprint to finish it, transfer it, and install the inbound
             workflow. Walk the catalog. Then tell us to proceed.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-wrap gap-3 print:hidden">
+            <a
+              href={PDF_HREF}
+              className="inline-flex h-12 items-center bg-white px-6 font-sans text-sm font-semibold text-sg-ink hover:bg-sg-mist"
+            >
+              Download PDF
+            </a>
             <Link
               to="/"
-              className="inline-flex h-12 items-center bg-white px-6 font-sans text-sm font-semibold text-sg-ink hover:bg-sg-mist"
+              className="inline-flex h-12 items-center border border-white/30 px-6 font-sans text-sm font-semibold text-white hover:border-white"
             >
               Walk the mockup
             </Link>
@@ -334,6 +433,10 @@ function ProposalPage() {
             <div>
               <SalesGencyMark tone="reversed" className="text-2xl" />
               <p className="mt-2 text-sm text-white/55">
+                Patrick Diamitani · SalesGency
+                <br />
+                Geraldy Jean-Baptiste · Unleash Your Sales Greatness
+                <br />
                 hello@salesgency.com · salesgency.com
                 <br />
                 SalesGency is a d/b/a of Diamitani Industries.
